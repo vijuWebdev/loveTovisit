@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit';
 
 export interface UsersState {
     firstName: string
@@ -24,7 +24,5 @@ export const usersSlice = createSlice({
     reducers: {},
 })
 
-// Action creators are generated for each case reducer function
-export const {} = usersSlice.actions
 
 export default usersSlice.reducer

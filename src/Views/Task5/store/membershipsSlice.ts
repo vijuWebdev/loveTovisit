@@ -1,8 +1,8 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit';
 
 export interface MembershipsState {
-    name: string
-    id: string
+    name: string;
+    id: string;
 }
 
 const initialState: MembershipsState[] = [
@@ -10,15 +10,12 @@ const initialState: MembershipsState[] = [
     { name: 'silver', id: '002' },
     { name: 'bronze', id: '003' },
     { name: 'none', id: '004' },
-]
+];
 
 export const membershipsSlice = createSlice({
     name: 'memberships',
     initialState,
     reducers: {},
-})
+});
 
-// Action creators are generated for each case reducer function
-export const {} = membershipsSlice.actions
-
-export default membershipsSlice.reducer
+export default membershipsSlice.reducer;
