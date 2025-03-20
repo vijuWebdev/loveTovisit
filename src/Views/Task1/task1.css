@@ -1,0 +1,86 @@
+.task1 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+}
+
+/* Header & Footer Styling */
+header,
+footer {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+/* Main Grid Layout */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 2rem;
+  flex-grow: 1;
+  transition: grid-template-columns 0.3s ease;
+}
+
+/* Dynamic Blocks */
+main > div {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Unique Block Colors */
+main > div:nth-child(1) { background-color: #ff6b6b; }
+main > div:nth-child(2) { background-color: #ffa502; }
+main > div:nth-child(3) { background-color: #2ed573; }
+main > div:nth-child(4) { background-color: #1e90ff; }
+main > div:nth-child(5) { background-color: #3742fa; }
+main > div:nth-child(6) { background-color: #8e44ad; }
+main > div:nth-child(7) { background-color: #ff4757; }
+main > div:nth-child(8) { background-color: #2f3542; }
+
+/* Hover Effect */
+main > div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Tablet View */
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium Desktop View */
+@media (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large Desktop View */
+@media (min-width: 1280px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Footer Styling */
+footer {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #f1f1f1;
+}
