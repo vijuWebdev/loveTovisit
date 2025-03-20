@@ -13,4 +13,4 @@ const Task4 = () => {
         </div>
     )
 }
-export default Task4
+export default Task4;
